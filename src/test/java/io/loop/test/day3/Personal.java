@@ -50,5 +50,8 @@ public class Personal {
             System.out.println("continue button is disabled");
         }
 
+        WebElement searchBy = driver.findElement(By.xpath("//select[@id='searchBy']"));
+        searchBy.click();
+
     }
 }
