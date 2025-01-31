@@ -30,7 +30,7 @@ public class task2 {
 
         //enter docuport password
         WebElement docuportPassword = driver.findElement(By.cssSelector("[id='input-15']"));
-        docuportPassword.sendKeys(DocuportConstants.PASSWORD_CLIENT);
+        docuportPassword.sendKeys(DocuportConstants.PASSWORD);
 
         WebElement login = driver.findElement(By.cssSelector("[class='v-btn__content']"));
         login.click();
