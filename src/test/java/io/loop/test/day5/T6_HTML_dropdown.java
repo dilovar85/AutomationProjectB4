@@ -38,7 +38,7 @@ public class T6_HTML_dropdown {
         WebElement password = driver.findElement(By.xpath("//input[@id='input-15']"));
         WebElement signIn = driver.findElement(By.className("v-btn__content"));
         userName.sendKeys(DocuportConstants.USERNAME_CLIENT);
-        password.sendKeys(DocuportConstants.PASSWORD_CLIENT);
+        password.sendKeys(DocuportConstants.PASSWORD);
         signIn.click();
 
         WebElement dropdown = driver.findElement(By.xpath("//input[@id='input-86']"));

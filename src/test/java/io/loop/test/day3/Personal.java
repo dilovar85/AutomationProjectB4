@@ -33,13 +33,13 @@ public class Personal {
         //hellonbjhd:
 
 
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+       // driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 
         WebElement termsAgreement = driver.findElement(By.id("termsAgreement"));
         termsAgreement.click();
 
        // driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-        WebDriverWait  wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+      //  WebDriverWait  wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 
 
         WebElement continueButton = driver.findElement(By.xpath("//button[@type='submit' and @id='disclaimerSubmitBtn']"));
@@ -52,6 +52,21 @@ public class Personal {
 
         WebElement searchBy = driver.findElement(By.xpath("//select[@id='searchBy']"));
         searchBy.click();
+
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+
+        WebElement searchByTicketAndCitationNumber = driver.findElement(By.xpath("//option[@value='ticketNumber']"));
+        searchByTicketAndCitationNumber.click();
+        System.out.println("Text" + searchByTicketAndCitationNumber.getText());
+
+        WebElement enterTicketNumber = driver.findElement(By.xpath("//input[@class='material-input material-text-field__input' and @id='otherFirstField']"));
+        enterTicketNumber.sendKeys("3598067");
+
+        WebElement licensePlate = driver.findElement(By.xpath("//input[@class='material-input material-text-field__input' and @id='otherSecondField']"));
+        licensePlate.sendKeys("MHE7211");
+
+        WebElement iAmNotRobot = driver.findElement(By.xpath("//div[@class='recaptcha-checkbox-borderAnimation' and @role='presentation']"));
+        iAmNotRobot.click();
 
     }
 }
