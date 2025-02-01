@@ -60,10 +60,10 @@ public class Personal {
         System.out.println("Text" + searchByTicketAndCitationNumber.getText());
 
         WebElement enterTicketNumber = driver.findElement(By.xpath("//input[@class='material-input material-text-field__input' and @id='otherFirstField']"));
-        enterTicketNumber.sendKeys("3598067");
+        enterTicketNumber.sendKeys("937013225");
 
         WebElement licensePlate = driver.findElement(By.xpath("//input[@class='material-input material-text-field__input' and @id='otherSecondField']"));
-        licensePlate.sendKeys("MHE7211");
+        licensePlate.sendKeys("MMT5973");
 
         WebElement iAmNotRobot = driver.findElement(By.xpath("//div[@class='recaptcha-checkbox-borderAnimation' and @role='presentation']"));
         iAmNotRobot.click();
