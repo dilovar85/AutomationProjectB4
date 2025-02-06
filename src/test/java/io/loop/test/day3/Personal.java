@@ -30,9 +30,6 @@ public class Personal {
         payTickets.click();
 
 
-        //hellonbjhd:
-
-
        // driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 
         WebElement termsAgreement = driver.findElement(By.id("termsAgreement"));
