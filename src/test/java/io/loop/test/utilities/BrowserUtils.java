@@ -1,6 +1,8 @@
 package io.loop.test.utilities;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.util.Set;
 
@@ -18,6 +20,10 @@ public class BrowserUtils {
      */
 
     public static void switchWindowAndValidate(WebDriver driver, String expectedUrl, String expectedTitle ) {
+
+
+
+
 
         // toLowerCase the params in order to avoid miss type
         expectedTitle = expectedTitle.toLowerCase();
